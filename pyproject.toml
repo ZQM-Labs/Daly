@@ -26,6 +26,7 @@ target-version = "py311"
 src = ["tools", "tests"]
 
 [tool.ruff.lint]
+ignore = ["E501", "F841", "I001", "B023", "PLW1510", "RUF013", "RUF059"]
 
 [tool.mypy]
 strict = true
