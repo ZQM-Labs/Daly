@@ -18,6 +18,16 @@ dy-orchestrator = "dy_orchestrator:main"
 dy-provenance = "dy_provenance:main"
 dy-index-update = "dy_index_update:main"
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "mypy>=1.0",
+    "bandit>=1.7",
+    "codespell>=2.0",
+    "pre-commit>=3.0",
+    "ruff>=0.5",
+]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 
