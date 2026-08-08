@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "daly-tools"
+version = "0.1.0"
+description = "Daly training/workflow surface tools"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+dependencies = [
+    "zqm-intel-platforms>=0.1.0",
+]
+
+[project.scripts]
+dy-orchestrator = "dy_orchestrator:main"
+dy-provenance = "dy_provenance:main"
+dy-index-update = "dy_index_update:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+src = ["tools", "tests"]
+
+[tool.mypy]
+strict = true
+disable_error_code = ["type-arg", "no-any-return"]
+files = ["tools", "tests"]
