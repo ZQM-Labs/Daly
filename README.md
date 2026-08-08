@@ -1,5 +1,10 @@
 # Daly
 
+![CI](https://github.com/ZQM-Labs/Daly/actions/workflows/ci.yml/badge.svg)
+![Tests](https://github.com/ZQM-Labs/Daly/actions/workflows/tests.yml/badge.svg)
+![Ruff](https://img.shields.io/badge/lint-ruff-blue)
+![Mypy](https://img.shields.io/badge/type--check-mypy-green)
+
 Daly operational tooling.
 
 ## About
